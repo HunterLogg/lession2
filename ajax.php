@@ -70,10 +70,10 @@ if($action == 'pagination'){
     }
     if($page >= $pagination){
         $output .= '<li class="page-item disabled">';
-        $output .= ' <a class="page-link" >Previous</a>';
+        $output .= ' <a class="page-link" >Next</a>';
     }else {
         $output .= '<li class="page-item">';
-        $output .= ' <a class="page-link" onclick="show_list('. $page + 1 . ')">Previous</a>';
+        $output .= ' <a class="page-link" onclick="show_list('. $page + 1 . ')">Next</a>';
     }
     echo $output;
 }
